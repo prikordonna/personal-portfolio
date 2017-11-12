@@ -1,75 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href='https://fonts.googleapis.com/css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Melashenko's Svitlana Portfolio</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-              <li>
-                  <a href="#home">Home</a>
-              </li>
-              <li>
-                  <a href="#introduction">Who I am</a>
-              </li>
-              <li>
-                  <a href="#services">Services</a>
-              </li>
-              <li>
-                  <a href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                  <a href="#contact">Contact</a>
-              </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="home">
-            <h1>Melashenko Svitlana</h1>
-            <p>Research Analyst & Future Front-end web Developer<p>
-            <p>-EST.2017-</p>
-        </section>
-        <section class="introduction">
-            <h2>About Me</h2>
-            <img src="/img/introduction.JPG" alt="My photo" style="width:500px;height:300px;">
+        <div id="header-inner">
+            <a href="index.html" id="logo"></a>
+            <nav class="navbar">
+                <a href="#" id="menu-icon"></a>
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="#" class="current">About</a></li>
+                    <li><a href="#" class="current">Skills</a></li>
+                    <li><a href="#" class="current">Portfolio</a></li>
+                    <li><a href="#" class="current">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    
+<!-- End header-->
+
+    <section class="intro">
+        <div class="inner">
+            <div class="content">
+                <h1>Melashenko Svitlana</h1>
+                <p>Research Analyst & Future Front-end web Developer<p>
+                <a class="btn" href="#">GET STARTED</a>
+            </div>
+        </div>
+    </section>
+    
+<!--End banner-->    
+
+    <section class="about">
+            <div class="image">
+                <img class="my-photo" src="/img/introduction.JPG" alt="My photo" style="width:500px;height:300px;">
+            </div> 
+            <div class="discription">
+            <h3>About Me</h3>
             <p>HI!  I am Svitlana and this is my personal portfolio. I like meeting new people, explore creative and vibrant  concepts with ornamented graphics, organic forms and  imaginative appeal. Now I work as a Research Analyst, but what I was always dreaming about is to create smth new.That is how I start my career as Front-end Developer.</p>
-        </section></center>
-        <section class="services">
-            <h2>Servises I can provide</h2>
-            <ul>
-                <li>Tailoring user experience</li>
-                <li>Creating tools that enhance how users see and interact with your site in any browser</li>
-                <li>Implementing responsive design for mobile sites</li>
-                <li>Bringing a designer’s concept to life with HTML, CSS, and JavaScript</li>
-                <li>Production, modification,and maintenance of websites and web application user interfaces</li>
-                <li>Maintaining software workflow management with a project management tool and task runners like GitHub</li>
-            </ul>
+            </div>
+    </section>
+    
+<!--End of about-->   
+
+    <section class="skills">
+        <article id="tailoring">
+            <img src="/img/skills.jpg">
+        </article>
+        <aside id="tailoring">
+            <h3>Tailoring user experience.<br>Bringing a designer’s concept to life with HTML, CSS, and JavaScript</h3>
+        </aside>
+    </section>    
+    <section class="skills-2">
+        <article id="creating">
+            <h3>Creating tools that enhance how users see and interact with your site in any browser.<br>                    <li>Maintaining software workflow management with a project management tool and task runners like GitHub</li>
+            </h3>
+        </article>
+        <aside id="creating">
+            <img src="/img/smartphone.jpg">
+        </aside>   
+    </section>
+    <section class="skills">
+        <article id="">
+            <img src="/img/puzzle.jpg">
+        </article>
+        <aside id="implementing">
+            <h3>Implementing responsive design for mobile sites.<br>Creating tools that enhance how users see and interact with your site in any browser</h3>
+        </aside>   
+    </section>
+    
+    <!-- End od skills -->
+    
+    <section class="portfolio">
+        <section class="images">
+            <img src="#" alt="">
+            <img src="#" alt="">
         </section>
-        <section class="portfolio">
-            <h2>Some of the latest works</h2>
-        </section>
-        <section class="contact">
-            <h3>Should you have any question? Please let me know</h3>
-            <form action>
-                <input type="text" placeholder="Name">
-                <br>
-                <input type="email" placeholder="E-mail">
-                <br>
-                <textarea placeholder="Message"></textarea>
-                <br>
-                <input type="submit" name="Send"/>
-                <h3>Contact me now</h3>
-                <p>+38 (0)970 787 266 <br>svetapogranichna@gmail.com</p>
-            </form>
-        </section>
-    </main>     
-    <div class="footer">
-        <center><img src="/img/logo.png" alt="website logo" style="width:100px;height:100px;"></center>
-    </div>
+    </section>
+
+    
+ <!-- End of portfolio--> 
+ 
+    <section class="contact">
+        <h3>Should you have any question? Please let me know</h3>
+        <form action>
+            <input type="text" placeholder="Name">
+            <br>
+            <input type="email" placeholder="E-mail">
+            <br>
+            <textarea placeholder="Message"></textarea>
+            <br>
+            <input type="submit" name="Send"/>
+            <h3>Contact me now</h3>
+            <p>+38 (0)970 787 266 <br>svetapogranichna@gmail.com</p>
+        </form>
+    </section>
+    
+    <footer>
+        <ul class="social">
+            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-gmail"></i></a></li>
+        </ul>
+    </footer>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
