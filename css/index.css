@@ -81,7 +81,7 @@ nav {
     float: left;
     width: 200px;
     height: 60px;
-    background-image: url(/img/logo.png);
+    background-image: url(img/logo.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -90,7 +90,7 @@ nav {
     display: hidden;
     width: 40px;
     height: 40px;
-    background-image: url(/img/menu-icon.svg);
+    background-image: url(img/menu-icon.svg);
     background-position: center;
 }
 a:hover #menu-icon {
@@ -129,7 +129,7 @@ nav ul li a:hover {
     height: 100%;
     width: 100%;
     margin: auto;
-    background-image: url(/img/homepage.jpg);
+    background-image: url(img/homepage.jpg);
     display: table;
     top: 0;
     background-size: cover;
@@ -213,7 +213,7 @@ nav ul li a:hover {
     height: 100%;
     width: 100%;
     margin: auto;
-    background-image: url(/img/solution.jpg);
+    background-image: url(img/solution.jpg);
     display: table;
     top: 0;
     background-size: cover;
