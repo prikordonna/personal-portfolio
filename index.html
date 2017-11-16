@@ -6,23 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Melashenko's Svitlana Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div id="header-inner">
-            <a href="index.html" id="logo"></a>
-            <nav class="navbar">
-                <a href="#" id="menu-icon"></a>
-                <ul>
-                    <li><a href="index.html" class="current">Home</a></li>
-                    <li><a href="#" class="current">About</a></li>
-                    <li><a href="#" class="current">Skills</a></li>
-                    <li><a href="#" class="current">Portfolio</a></li>
-                    <li><a href="#" class="current">Contact</a></li>
-                </ul>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
         </div>
-    </header> 
+    </nav>
     
 <!-- End header-->
 
@@ -30,60 +38,93 @@
         <div class="intro-inner">
             <div class="content">
                 <h1>Melashenko Svitlana</h1>
-                <h2>Research Analyst & Future Front-end web Developer</h2>
+                <h2>Research Analyst &amp; Future Front-end web Developer</h2>
                 <a class="btn" href="#">GET STARTED</a>
             </div>
         </div>
     </section>
     
-<!--End banner-->    
-
-    <section class="about">
-        <div class="about-me">
-            <h3>About Me</h3>
-        </div>
-        <div class="about-image">
-            <img class="my-photo" src="img/introduction.JPG" alt="My photo">
-        </div> 
-        <dic class="about-description">
-            <p>HI!  I am Svitlana and this is my personal portfolio. I like meeting new people, explore creative and vibrant  concepts with ornamented graphics, organic forms and  imaginative appeal. Now I work as a Research Analyst, but what I was always dreaming about is to create smth new.That is how I start my career as Front-end Developer.</p>
-        </div>
-    </section>
+<!--End banner-->   
+    <div class="about">
+        <div class="jumbotron">
+               <h1 class="display-3">HI! I am Svitlana.</h1>
+                <hr class="my-4">
+                <p>This is my personal portfolio.
+                  I like meeting new people, explore creative and vibrant concepts with ornamented graphics, 
+                  organic forms and imaginative appeal. Now I work as a Research Analyst, 
+                  but what I was always dreaming about is to create smth new.That is how I start my career as 
+                  Front-end Developer.
+                </p>  
+            </div>
+        <div class="about-grid">   
+            <div class="textToImage">
+                <p>"Be yourself. Everyone else is already taken." -- Oscar Wilde</p>
+            </div>
+            <div class="aboutImage">
+                <img src="/img/my-photo.jpg" alt="my photo"></img>
+            </div>    
+        </div>     
     
-<!--End of about-->
+<!--End About-->  
 
     <section id="skills">
         <div class="skills-header">
-            <h3>Skills</h3>
+            <h2>Skills</h2>
         </div>
-        <div id="img-tailoring">
-            <img src="img/stickers.png" alt="stickers">
-        </div>
-        <div id="p-tailoring">
-            <p>Tailoring user experience.<br>Bringing a designer’s concept to life with HTML, CSS, and JavaScript</p>
-        </div>
-        <div id="p-creating">
-                <p>Creating tools that enhance how users see and interact with your site in any browser.<br>Maintaining software workflow management with a project management tool and task runners like GitHub</p>
-        </div>
-        <div id="img-creating">
-            <img src="img/smartphone.jpg" alt="smartphone">
-        </div>   
-        <div id="img-implementing">
-                <img src="img/puzzle.jpg" alt="puzzle">
-        </div>
-        <div id="p-implementing">
-            <p>Implementing responsive design for mobile sites.<br>Creating tools that enhance how users see and interact with your site in any browser</p>
-        </div>   
+        <div class="skills-listing">
+            <div id="img-tailoring">
+                <img src="img/html-services.png" alt="icons">
+            </div>
+            <div id="p-tailoring">
+                <p>Tailoring user experience.<br>Bringing a designer’s concept to life with HTML, CSS, and JavaScript</p>
+            </div>
+            <div id="p-creating">
+                <p>Implementing responsive design for mobile sites.<br>Creating tools that enhance how users see and interact with your site in any browser</p>
+            </div>
+            <div id="img-creating">
+                <img src="img/mobile-devices.png" alt="mobile-devices">
+            </div>   
+            <div id="img-implementing">
+                    <img src="img/github.png" alt="github">
+            </div>
+            <div id="p-implementing">
+                <p>Maintaining software workflow management with a project management tool and task runners like GitHub</p>
+            </div> 
+        </div>    
     </section>
     
     <!-- End od skills -->
     
     <section class="portfolio">
-        <h2>Portfolio</h2>
-        <section class="images">
-            <img src="#" alt="">
-            <img src="#" alt="">
-        </section>
+        <h2>Some of my work</h2>
+        
+        <figure class="port-item">
+            <img src="img/bellflower.jpg" alt="portfolio item"></img>
+            <figcaption class="port-description">
+                <a href="" class="button button-small">Project details</a>
+            </figcaption>
+        </figure>
+        
+        <figure class="port-item">
+            <img src="img/sunrise.jpg" alt="portfolio item"></img>
+            <figcaption class="port-description">
+                <a href="" class="button button-small">Project details</a>
+            </figcaption>
+        </figure>
+        
+        <figure class="port-item">
+            <img src="img/workplace.jpg" alt="portfolio item"></img>
+            <figcaption class="port-description">
+                <a href="" class="button button-small">Project details</a>
+            </figcaption>
+        </figure>
+        
+        <figure class="port-item">
+            <img src="img/yogurt.jpg" alt="portfolio item"></img>
+            <figcaption class="port-description">
+                <a href="" class="button button-small">Project details</a>
+            </figcaption>
+        </figure>
     </section>
 
     
@@ -91,17 +132,20 @@
  
     <section class="contact">
         <h2>Should you have any question? Please let me know</h2>
-        <form action>
-            <input type="text" placeholder="Name">
-            <br>
-            <input type="email" placeholder="E-mail">
-            <br>
-            <textarea placeholder="Message"></textarea>
-            <br>
-            <input type="submit" name="Send"/>
-            <h3>Contact me now</h3>
-            <p>+38 (0)970 787 266 <br>svetapogranichna@gmail.com</p>
-        </form>
+        <form>
+            <fieldset>
+                <legend>Legend</legend>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea">Example textarea</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-success">Submit</button>
+            </fieldset>   
+        </form>       
     </section>
     
     <footer>
@@ -112,6 +156,13 @@
         </ul>
     </footer>
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" 
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 </html>

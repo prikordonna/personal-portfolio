@@ -1,0 +1,115 @@
+MAIN
+/*
+
+h2 {
+    color: #ffffff;
+    font-size: 250%;
+}
+
+p {
+    color: #000;
+    font-size: 160%;
+    line-height: 150%;
+    padding: 3%;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/
+ABOUT
+/*HTML about
+<section class="about">
+        <div class="about-header">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-inner">
+            <div class="about-image">
+                <img class="my-photo" src="img/introduction.JPG" alt="My photo">
+            </div> 
+            <div class="about-description">
+                <p>HI!  I am Svitlana and this is my personal portfolio. I like meeting new people, explore creative and vibrant  concepts with ornamented graphics, organic forms and  imaginative appeal. Now I work as a Research Analyst, but what I was always dreaming about is to create smth new.That is how I start my career as Front-end Developer.</p>
+            </div>
+        </div>    
+    </section>
+*/
+
+/*
+.about-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.about-image {
+    float: left;
+    width: 800px;
+    padding: 0;
+    margin: 200px 10px;
+}
+
+.my-photo {
+    border: medium;
+    border-radius: 30%;
+    border-color: #000;
+}
+
+.about-description {
+    margin: 200px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    overflow: auto;
+   
+}
+------------------------------------------------------
+
+.about {
+    background-image: url(../img/my-photo.jpg);
+    background-color: #232323;
+    padding: 50px;
+    margin: 5px;
+    outline: 2px solid #00ff6c;
+    outline-offset: -40px;
+    color: #FFF;
+}
+
+
+.about-header h2 {
+    margin: 0;
+    padding: 0;
+    color: #00ff6c;
+    font-weight: bold;
+    position: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    background: #232323;
+    width: 130px;
+}
+
+.about-description {
+    font-size: 5px;
+}
+
+
+
+
+*/
+
+
+#logo {
+    border-style: solid;
+    border-width: 2px;
+    float: left;
+    background-size: contain;
+    width: 150px;
+    height: 89px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: white;
+    background-color: white;
+    border-radius: 50%;
+}
