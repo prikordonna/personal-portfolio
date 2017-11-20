@@ -7,7 +7,7 @@
     <title>Melashenko's Svitlana Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
         integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -17,19 +17,19 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#foot">Contact</a>
                 </li>
             </ul>
         </div>
@@ -81,7 +81,7 @@
         </div>    
     </section>
     
-    <section class="portfolio">
+    <section id="portfolio">
         <div class="port-header">
             <h2>Some of my works</h2>
         </div>
@@ -113,31 +113,59 @@
             </figcaption>
         </figure>
     </section>
-    <section class="contact">
-        <h2>Should you have any question? Please let me know</h2>
-        <form>
-            <fieldset>
-                <legend>Legend</legend>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleTextarea">Example textarea</label>
-                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-outline-success">Submit</button>
-            </fieldset>   
-        </form>       
-    </section>
+    <div id="contact-form">
+        <div class="wrapper">
+            <div class="company-info">
+                <h2>Should you have any question?<br>Get in touch.</h2>
+                <ul>
+                    <li>Ukraine, Lviv city</li>
+                    <li>(+380) 970-7872-68</li>
+                    <li>svetapogranichna@gmail.com</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Email Us</h3>
+                <form method="post" action="https://formspree.io/svetapogranichna@gmail.com">
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <label>Company</label>
+                        <input type="text" name="company">
+                    </p>
+                    <p>
+                        <label>Email Address</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Phone Number</label>
+                        <input type="text" name="phone">
+                    </p>
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5"></textarea>
+                    </p>
+                    <p class="full">
+                        <button>Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+  
     
     <footer>
-        <ul class="social">
-            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-gmail"></i></a></li>
-        </ul>
+        <div id="foot">
+            <div class="social">
+                <p>Stay Connected</p>
+                <a class="facebook" href="https://www.facebook.com/profile.php?id=100005555117631"><img src="/img/facebook.png"></a>    
+                <a class="gmail" href="mailto:svetapogranichna@gmail.com"><img src="/img/gmail.png"></div></a>    
+                <a class="linkedin" href="https://www.linkedin.com/in/svitlana-melashenko-65784510b/"><img src="/img/linkedin.png"></a>    
+            </div>
+        </div>
     </footer>
+    
     <!-- Latest compiled JavaScript -->
     <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
